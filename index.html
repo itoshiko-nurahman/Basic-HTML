@@ -90,9 +90,22 @@
     <legend>Please fill this page</legend>
     <!-- Legend make description for the fieldset -->
     
-      <p>Name : <input type="text" name="name"></p>
+      <!-- <p>Name : <input type="text" name="name"></p>
+      name attribute is used to be reference
       <p>Password : <input type="password" name="password"></p>
-      <p>Email : <input type="email" name="email"></p>
+      <p>Email : <input type="email" name="email"></p> -->
+      <!-- **There is a label tag to make when we click the text we automatically directed to the form -->
+
+      <label for="name">Name :</label>
+      <input type="text" name="name" id="name">
+      <br> <!-- like enter button in keyboard -->
+      <label for="password">Password :</label>
+      <input type="password" name="password" id="password">
+      <br>
+      <label for="email">Email :</label>
+      <!-- for is used to attach the form and label -->
+      <input type="email" name="email" id="email">
+      <!-- type and name is same, id is for uniqe sign -->
 
       <p>Gender :
       <input type="radio" name="gender" value="male" checked> Male
@@ -118,6 +131,7 @@
 
         <p>Write your comment about this website : <br>
           <textarea rows="10" cols="50" placeholder="Write text in here"></textarea>
+          <!-- placeholder is text to display in the area to inform the user -->
         </p>
         <p><input type="button" value="process"></p>
   </fieldset>
